@@ -1,0 +1,23 @@
+<h4>Kategoriler</h4>
+<div>
+  <table class="table table-striped">
+    <thead>
+
+        <tr>
+        <td>Id</td>
+        <td>Adı</td>
+        <td>Açıklamsı</td>
+        <td>Durum</td>
+      </tr>
+
+    </thead>
+    <tbody *ngFor="let category of categories">
+      <tr>
+        <td>{{category.categoryId}}</td>
+        <td>{{category.categoryName}}</td>
+        <td>{{category.categoryDescription}}</td>
+        <td>{{category.categoryStatus}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
